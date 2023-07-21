@@ -5,26 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 011</title>
     <style>
-        #container {
-            height: 100vh;
+        body {
+            height: 100%;
             background-color: black;
-            background-image: url('imagens/espaco.jpg');
-            background-size:cover;
+            background-image: url(imagens/espaco.jpg);
+            position: relative;
+            background-size: cover;
+            background-attachment: fixed;
         }
 
         #conteudo {
-            background-position: center center;
-            background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 25%);
+            
         }
     </style>
 </head>
 <body>
-    <section id="container">
-        <article id="conteudo">
-            <img src="imagens/astronauta.png" alt="astronauta">
-        </article>
-    </section>
+        <section>
+            <article id="conteudo">
+                <img src="imagens/astronauta.png" alt="astronauta">
+            </article>
+        </section>
 </body>
 </html>
